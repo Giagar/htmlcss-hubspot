@@ -1,6 +1,9 @@
 /* ----COMMON & UTILITY */
 html {
   font-family: Arial, sans-serif;
+  --header-nav-height: 70px;
+  --header-li-padding: 15px;
+  --btn-color: #FE775A;
 }
 
 * {
@@ -23,8 +26,135 @@ html {
   clear: both;
 }
 
+.content {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+button {
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+}
+
+.btn-orange {
+  background: var(--btn-color);
+  color: white;
+  padding: 20px 35px;
+}
+
+.btn-orange.get::after {
+  content: "GetHubspotFree";
+  font-size: 13px;
+}
+
 /* ----/COMMON & UTILITY */
 
 /* ----STYLE */
+.wrapper {
+  width: 100%;
+  min-width: 1200px;
+  background: grey;
+  height: 1000px;
+}
+
+/* ----nav */
+header .nav-top-container {
+  background-color: #F4F9FD;
+}
+
+header .nav-top {
+  height: var(--header-nav-height);
+}
+
+header ul {
+  list-style: none;
+  height: var(--header-nav-height);
+}
+
+header ul li {
+  display: inline;
+  line-height: var(--header-nav-height);
+}
+
+header .nav-top-left li, header .nav-bottom-left li{
+  padding-right: var(--header-li-padding);
+}
+
+header .nav-top-right li, header .nav-bottom-right li{
+  padding-left: var(--header-li-padding);
+}
+
+/* ----nav top left */
+header .nav-top-left {
+  color: #32495B;
+}
+
+header .nav-top-left li:first-child {
+  padding-right: var(--header-li-padding);
+  border-right: 2px solid #899397;
+}
+
+/* ----nav top right */
+header .nav-top-right li:first-child {
+  color: #01A4BD;
+}
+
+header .nav-top-right button.login {
+  border: 1px solid var(--btn-color);
+  color: var(--btn-color);
+  background: transparent;
+}
+
+header .nav-top-right button.get {
+  padding: 10px;
+}
+
+/* ----nav bottom */
+.nav-bottom-container {
+  background: #FFFFFF;
+  color: #475A6B;
+}
+
+.nav-bottom-container {
+  border-top: 1px solid #32495B;
+}
+
+.nav-bottom-container .logo{
+  height: 100%;
+}
+
+/* ----header content */
+.header-content-container {
+  background: url("../img/jumbotron.png") no-repeat bottom right;
+  background-size: cover;
+}
+
+.header-content {
+  color: #33475B;
+}
+
+.header-title-container {
+  width: 600px;
+  padding-top: var(--header-nav-height);
+  padding-bottom: calc(3*var(--header-nav-height));
+}
+
+.header-title-container * {
+  margin-bottom: 30px;
+}
+
+.header-title {
+  font-size: 50px;
+}
+
+.header-description1 {
+  padding-top: var(--vertical-padding);
+  line-height: 25px;
+}
+
+.header-description2 {
+  font-size: 12px;
+}
 
 /* ----/STYLE */
