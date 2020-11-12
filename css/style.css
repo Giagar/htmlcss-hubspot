@@ -48,6 +48,10 @@ button {
   font-size: 13px;
 }
 
+p {
+  line-height: 28px;
+}
+
 /* ----/COMMON & UTILITY */
 
 /* ----STYLE */
@@ -150,11 +154,49 @@ header .nav-top-right button.get {
 
 .header-description1 {
   padding-top: var(--vertical-padding);
-  line-height: 25px;
 }
 
 .header-description2 {
   font-size: 12px;
+}
+
+/* ----section1 */
+.section1-container {
+  background: #F4F9FD;
+  padding: 35px 0;
+}
+
+.section1 {
+  text-align: center;
+  color: #33475B;
+}
+
+.section1 .section-title {
+  font-size: 35px;
+}
+
+.section1 .section-description {
+  padding: 35px 0;
+}
+
+.crm-container div {
+  background: yellow;
+}
+
+.crm-description {
+  height: 350px;
+}
+
+.crm-item {
+  height: 600px;
+  width: calc((100% - 100px)/3);
+  margin-top: 50px;
+  background: yellow;
+}
+
+.crm-item:nth-child(3) {
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 /* ----/STYLE */
