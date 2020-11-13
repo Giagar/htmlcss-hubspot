@@ -4,6 +4,7 @@ html {
   --header-nav-height: 70px;
   --header-li-padding: 15px;
   --btn-color: #FE775A;
+  --font-size-content: 14px;
 }
 
 * {
@@ -35,21 +36,31 @@ button {
   padding: 8px;
   border-radius: 4px;
   border: none;
+  font-size: var(--font-size-content);
 }
 
 .btn-orange {
   background: var(--btn-color);
   color: white;
-  padding: 20px 35px;
+  padding: 20px 40px;
 }
 
 .btn-orange.get::after {
   content: "GetHubspotFree";
-  font-size: 13px;
+}
+
+.btn-orange.learn::after {
+  content: "Learn More";
 }
 
 p {
   line-height: 28px;
+}
+
+.white-shadow-radius {
+  background: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 0 8px 4px #EAEFF5;
 }
 
 /* ----/COMMON & UTILITY */
@@ -179,19 +190,71 @@ header .nav-top-right button.get {
   padding: 35px 0;
 }
 
-.crm-container div {
-  background: yellow;
+/* container bianchi */
+.crm-description {
+  --padding-crm: 40px;
+  padding: var(--padding-crm);
+  height: 350px;
+  width: 100%;
 }
 
-.crm-description {
-  height: 350px;
+.crm-description-img {
+  width: 30%;
+  padding: var(--padding-crm);
+}
+
+.crm-description-img img{
+  padding-bottom: 15px;
+}
+
+.crm-description-text {
+  width: 70%;
+  text-align: left;
+  padding: var(--padding-crm);
+}
+
+.crm-description-text > h3, .crm-description-text > p, .crm-description-text > h4 {
+  padding-bottom: 25px;
+}
+
+.crm-description-text > h3 {
+  font-size: 26px;
+}
+
+.crm-description-text > h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.crm-description-text > h4::after {
+  content: "-";
+  background: #899397;
+  width: 55%;
+  height: 1px;
+  display: inline;
+}
+
+.crm-description-text .features li::before {
+  content: url("../img/check-orange.png");
+  vertical-align: middle;
+  padding-right: 10px;
+}
+
+.crm-description-text ul {
+  list-style: none;
+  /* height: var(--header-nav-height); */
+}
+
+.crm-description-text ul li {
+  display: inline;
+  padding-right: 15px;
+  /* line-height: var(--header-nav-height); */
 }
 
 .crm-item {
   height: 600px;
   width: calc((100% - 100px)/3);
   margin-top: 50px;
-  background: yellow;
 }
 
 .crm-item:nth-child(3) {
