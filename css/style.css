@@ -376,7 +376,6 @@ section h2 {
 
 /* ----section3 */
 .section3 {
-  height: 500px;
   padding: var(--padding-crm) 0;
   text-align: left;
 }
@@ -402,29 +401,27 @@ section h2 {
   width: 100%;
 }
 
-.section3 .main-content {
+.section3 .second-part {
   position: relative;
 }
 
-.section3 .main-content h2, .section3 .main-content button {
+.section3 .second-part h2, .section3 .second-part button {
   margin-bottom: 30px;
 }
 
-.section3 .main-content .text-container {
+.section3 .second-part .text-container {
   padding-top: 30px;
   width: 44%;
-  position: relative;
-
 }
 
-.section3 .main-content img {
+.section3 .second-part img {
   position: absolute;
   bottom: 0;
   right: 0;
   width: 350px;
 }
 
-.section3 .main-content .description2 {
+.section3 .second-part .description2 {
   font-size: 12px;
 }
 
