@@ -192,8 +192,13 @@ header .nav-top-right button.get {
   color: #33475B;
 }
 
-.section1 .section-title {
+section {
+  text-align: center;
+}
+
+section h2 {
   font-size: 35px;
+  font-size: 30px;
 }
 
 .section1 .section-description {
@@ -288,5 +293,66 @@ header .nav-top-right button.get {
   margin-left: 50px;
   margin-right: 50px;
 }
+
+/* ----section2 */
+.section2-container {
+  background: linear-gradient(90deg, #01A7BA, #01BCA5);
+}
+
+.section2 {
+  color: white;
+  padding: 50px 0;
+}
+
+.section2 h2, p, .services {
+  padding-bottom: 30px;
+}
+
+.services-item {
+  width: 25%;
+  padding: calc(var(--padding-crm) / 2);
+  --internal-border: 1px solid white;
+}
+
+.services-item {
+  border-right: var(--internal-border);
+}
+
+.services-item:nth-child(4), .services-item:last-child {
+  border-right: none;
+}
+
+.services-item:nth-child(n+5):nth-child(-n+8) {
+  border-top: var(--internal-border);
+}
+
+/* ho messo l'altezza per far stare tutto sulla stessa linea, anche se nel modello non le scritte della seconda riga non sono allineate */
+.services-item img {
+  height: 50px;
+}
+
+.services-item img, .services-item .number {
+  padding-bottom: calc(var(--padding-crm) / 2);
+}
+
+.services-item .number {
+  font-size: 37px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.services-item .number::after {
+  content: " +";
+  font-size: 28px;
+  vertical-align: middle;
+  font-weight: 400;
+}
+
+.services-item .number-description {
+  font-size: 12px;
+}
+
+
+
 
 /* ----/STYLE */
