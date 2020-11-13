@@ -5,6 +5,8 @@ html {
   --header-li-padding: 15px;
   --btn-color: #FE775A;
   --font-size-content: 14px;
+  --padding-crm: 40px;
+  --crm-hr-color: #899397;
 }
 
 * {
@@ -192,7 +194,6 @@ header .nav-top-right button.get {
 
 /* container bianchi */
 .crm-description {
-  --padding-crm: 40px;
   padding: var(--padding-crm);
   height: 350px;
   width: 100%;
@@ -203,7 +204,7 @@ header .nav-top-right button.get {
   padding: var(--padding-crm);
 }
 
-.crm-description-img img{
+.crm-description-img img, .crm-item {
   padding-bottom: 15px;
 }
 
@@ -213,28 +214,29 @@ header .nav-top-right button.get {
   padding: var(--padding-crm);
 }
 
-.crm-description-text > h3, .crm-description-text > p, .crm-description-text > h4 {
+.section1 h3, .section1 p, .section1 h4 {
   padding-bottom: 25px;
 }
 
-.crm-description-text > h3 {
+.section1 h3 {
   font-size: 26px;
+  text-transform: capitalize;
 }
 
-.crm-description-text > h4 {
+.section1 h4 {
   font-size: 20px;
   text-transform: uppercase;
 }
 
 .crm-description-text > h4::after {
   content: "-";
-  background: #899397;
+  background: var(--crm-hr-color);
   width: 55%;
   height: 1px;
   display: inline;
 }
 
-.crm-description-text .features li::before {
+.section1 li::before {
   content: url("../img/check-orange.png");
   vertical-align: middle;
   padding-right: 10px;
@@ -252,9 +254,25 @@ header .nav-top-right button.get {
 }
 
 .crm-item {
-  height: 600px;
   width: calc((100% - 100px)/3);
   margin-top: 50px;
+  padding: calc(var(--padding-crm)/2);
+}
+
+.crm-item > p::after {
+  content: "";
+  display: block;
+  background: var(--crm-hr-color);
+  width: 100%;
+  height: 2px;
+  margin: 60px 0 15px;
+}
+
+.crm-item ul {
+  list-style: none;
+  text-align: left;
+  margin-bottom: 45px;
+  text-transform: capitalize;
 }
 
 .crm-item:nth-child(3) {
