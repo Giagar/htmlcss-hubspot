@@ -187,6 +187,10 @@ header .nav-top-right button.get {
   margin-bottom: 30px;
 }
 
+.header-title-container .header-description1 {
+  margin-bottom: 0;
+}
+
 .header-title {
   font-size: 50px;
 }
@@ -377,11 +381,6 @@ section h2 {
   text-align: left;
 }
 
-.section3 .customers {
-  /* width: 90%;
-  margin: 0 auto; */
-}
-
 .section3 .customers .text-container {
   width: 40%;
   padding: 20px 125px;
@@ -403,7 +402,31 @@ section h2 {
   width: 100%;
 }
 
+.section3 .main-content {
+  position: relative;
+}
 
+.section3 .main-content h2, .section3 .main-content button {
+  margin-bottom: 30px;
+}
+
+.section3 .main-content .text-container {
+  padding-top: 30px;
+  width: 44%;
+  position: relative;
+
+}
+
+.section3 .main-content img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 350px;
+}
+
+.section3 .main-content .description2 {
+  font-size: 12px;
+}
 
 
 /* ----/STYLE */
