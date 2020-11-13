@@ -1,3 +1,21 @@
+/* temp */
+.greyt {
+  background: lightgrey;
+}
+
+.greent {
+  background: green;
+}
+
+.oranget {
+  background: orange;
+}
+
+.bluet {
+  background: lightblue;
+}
+/* /temp */
+
 /* ----COMMON & UTILITY */
 html {
   font-family: Montserrat, sans-serif;
@@ -189,11 +207,11 @@ header .nav-top-right button.get {
 
 .section1 {
   text-align: center;
-  color: #33475B;
 }
 
 section {
   text-align: center;
+  color: #33475B;
 }
 
 section h2 {
@@ -350,6 +368,39 @@ section h2 {
 
 .services-item .number-description {
   font-size: 12px;
+}
+
+/* ----section3 */
+.section3 {
+  height: 500px;
+  padding: var(--padding-crm) 0;
+  text-align: left;
+}
+
+.section3 .customers {
+  /* width: 90%;
+  margin: 0 auto; */
+}
+
+.section3 .customers .text-container {
+  width: 40%;
+  padding: 20px 125px;
+}
+
+.section3 .customers .text-container .number{
+  font-weight: bold;
+  font-size: 45px;
+  padding-bottom: 30px;
+}
+
+.section3 .customers .img-container  {
+  width: 60%;
+  padding: 0px 75px;
+  margin-top: 35px;
+}
+
+.section3 .customers .img-container img{
+  width: 100%;
 }
 
 
