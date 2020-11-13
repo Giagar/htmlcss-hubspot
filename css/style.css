@@ -1,6 +1,6 @@
 /* ----COMMON & UTILITY */
 html {
-  font-family: Arial, sans-serif;
+  font-family: Montserrat, sans-serif;
   --header-nav-height: 70px;
   --header-li-padding: 15px;
   --btn-color: #FE775A;
@@ -256,7 +256,8 @@ header .nav-top-right button.get {
 .crm-item {
   width: calc((100% - 100px)/3);
   margin-top: 50px;
-  padding: calc(var(--padding-crm)/2);
+  /* errore nella validazione, ma funziona lo stesso (non gli piacciono le variabili) */
+  padding: calc(var(--padding-crm) / 2);
 }
 
 .crm-item > p::after {
