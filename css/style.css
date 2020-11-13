@@ -98,6 +98,10 @@ header .nav-top-left li, header .nav-bottom-left li{
   padding-right: var(--header-li-padding);
 }
 
+header .nav-top-left li:nth-child(2) {
+  padding-left: var(--header-li-padding);
+}
+
 header .nav-top-right li, header .nav-bottom-right li{
   padding-left: var(--header-li-padding);
 }
@@ -137,8 +141,12 @@ header .nav-top-right button.get {
   border-top: 1px solid #32495B;
 }
 
+.nav-bottom-left {
+  line-height: var(--header-nav-height);
+}
+
 .nav-bottom-container .logo{
-  height: 100%;
+  vertical-align: middle;
 }
 
 /* ----header content */
