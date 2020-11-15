@@ -169,17 +169,31 @@ header .nav-top-right button.get {
 
 /* ----header content */
 .header-content-container {
-  background: url("../img/jumbotron.png") no-repeat bottom right;
-  background-size: cover;
+  background: #FEF6EF url("../img/jumbotron.png") no-repeat bottom right;
+  /* background-size: cover; */
+  position: relative;
 }
 
 .header-content {
   color: #33475B;
 }
 
+.header-content-container::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 78px;
+  background: #AFEBE4;
+  border-top: 3px solid #33475B;
+  border-bottom: 3px solid #33475B;
+  position: absolute;
+  bottom: 0;
+  /* opacity: 0.2; */
+}
+
 .header-title-container {
   width: 600px;
-  padding-top: var(--header-nav-height);
+  padding-top: 40px;
   padding-bottom: calc(3*var(--header-nav-height));
 }
 
@@ -203,6 +217,7 @@ header .nav-top-right button.get {
   font-size: 12px;
 }
 
+/* ----main */
 /* ----section1 */
 .section1-container {
   background: #F4F9FD;
