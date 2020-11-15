@@ -278,12 +278,17 @@ section h2 {
   text-transform: uppercase;
 }
 
-.crm-description-text > h4::after {
-  content: "-";
-  background: var(--crm-hr-color);
-  width: 55%;
-  height: 1px;
-  display: inline;
+.crm-description-text > h4 {
+  display: inline-block;
+  width: 39%;
+}
+
+.crm-description-text .separator {
+  display: inline-block;
+  width: 59%;
+  background: #899397;
+  height: 2px;
+  vertical-align: super;
 }
 
 .section1 li::before {
