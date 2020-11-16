@@ -461,7 +461,7 @@ footer ul {
 
 /* nav top */
 .footer-nav-top {
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .footer-nav-top .col {
@@ -491,6 +491,18 @@ footer ul {
   font-size: 17px;
 }
 
+.footer-nav-middle {
+  text-align: center;
+  border-bottom: 1px solid #CBD6E2;
+}
+
+.footer-nav-middle ul {
+  display: inline-block;
+}
+
+.footer-nav-middle ul li {
+  padding: 15px;
+}
 
 
 
