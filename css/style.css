@@ -83,6 +83,10 @@ p {
   box-shadow: 0 0 8px 4px #EAEFF5;
 }
 
+.white-color {
+  color: white;
+}
+
 /* ----/COMMON & UTILITY */
 
 /* ----STYLE */
@@ -444,6 +448,56 @@ section h2 {
 .section3 .second-part .description2 {
   font-size: 12px;
 }
+
+/* ----footer */
+footer {
+  background: #32495B;
+  color: #CBD6E2;
+}
+
+footer ul {
+  list-style: none;
+}
+
+/* nav top */
+.footer-nav-top {
+  padding-bottom: 100px;
+}
+
+.footer-nav-top .col {
+  width: 25%;
+}
+
+.footer-nav-top ul li {
+  text-transform: capitalize;
+  padding-top: 20px;
+  font-weight: 500;
+}
+
+.footer-nav-top ul li:first-child{
+  padding-bottom: 15px;
+  padding-top: 40px;
+}
+
+.footer-nav-top button {
+  padding: 10px;
+  background: #DADEE0;
+  color: #32495B;
+}
+
+.footer-nav-top i {
+  display: inline-block;
+  width: 12%;
+  font-size: 17px;
+}
+
+
+
+
+
+
+/* top nav */
+
 
 
 /* ----/STYLE */
