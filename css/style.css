@@ -77,6 +77,11 @@ p {
   line-height: 28px;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .white-shadow-radius {
   background: #FFFFFF;
   border-radius: 4px;
