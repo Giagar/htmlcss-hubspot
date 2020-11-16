@@ -453,13 +453,15 @@ section h2 {
 footer {
   background: #32495B;
   color: #CBD6E2;
+  font-weight: 500;
+
 }
 
 footer ul {
   list-style: none;
 }
 
-/* nav top */
+/* top nav */
 .footer-nav-top {
   padding-bottom: 50px;
 }
@@ -471,7 +473,6 @@ footer ul {
 .footer-nav-top ul li {
   text-transform: capitalize;
   padding-top: 20px;
-  font-weight: 500;
 }
 
 .footer-nav-top ul li:first-child{
@@ -491,6 +492,7 @@ footer ul {
   font-size: 17px;
 }
 
+/* middle nav */
 .footer-nav-middle {
   text-align: center;
   border-bottom: 1px solid #CBD6E2;
@@ -504,11 +506,26 @@ footer ul {
   padding: 15px;
 }
 
+/* bottom nav */
+
+.footer-nav-bottom {
+  padding: 40px 0;
+}
+
+.footer-nav-bottom logo {
+  padding-bottom: 30px;
+}
+
+.footer-nav-bottom .privacy li{
+  display: inline-block;
+  padding-left: 30px;
+}
+
+footer .copyright {
+  color: white;
+}
 
 
-
-
-/* top nav */
 
 
 
