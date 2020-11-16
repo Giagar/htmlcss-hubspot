@@ -395,7 +395,7 @@ section h2 {
 .services-item .number::after {
   content: " +";
   font-size: 0.5em;
-  vertical-align: middle;
+  vertical-align: 25%;
   font-weight: 400;
 }
 
