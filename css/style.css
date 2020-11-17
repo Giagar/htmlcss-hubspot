@@ -389,7 +389,7 @@ section h2 {
 }
 
 .section3 .customers .text-container {
-  width: 40%;
+  width: 36%;
   padding: 20px 125px;
 }
 
@@ -400,13 +400,15 @@ section h2 {
 }
 
 .section3 .customers .img-container  {
-  width: 60%;
+  width: 64%;
   padding: 0px 75px;
   margin-top: 35px;
 }
 
 .section3 .customers .img-container img{
-  width: 100%;
+  width: calc(24% - 8px);
+  vertical-align: middle;
+  margin: 0 4px;
 }
 
 .section3 .second-part {
