@@ -89,7 +89,7 @@ a {
   height: 1000px;
 }
 
-/* ----nav */
+/* ----NAV */
 header .nav-top-container {
   background-color: #F4F9FD;
 }
@@ -207,7 +207,7 @@ header .nav-top-right .btn.login {
   font-size: 12px;
 }
 
-/* ----main */
+/* ----MAIN */
 /* ----section1 */
 .section1-container {
   background: #F4F9FD;
@@ -433,7 +433,7 @@ section h2 {
   font-size: 12px;
 }
 
-/* ----footer */
+/* ----FOOTER */
 footer {
   background: #32495B;
   color: #CBD6E2;
