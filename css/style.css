@@ -34,24 +34,30 @@ html {
   margin: 0 auto;
 }
 
-button {
-  padding: 8px;
+.btn {
   border-radius: 4px;
   border: none;
   font-size: var(--font-size-content);
 }
 
-.btn-orange {
-  background: var(--btn-color);
-  color: white;
+.btn.small {
+  padding: 8px;
+}
+
+.btn.large {
   padding: 20px 40px;
 }
 
-.btn-orange.get::after {
+.btn.orange {
+  background: var(--btn-color);
+  color: white;
+}
+
+.btn.orange.get::after {
   content: "GetHubspotFree";
 }
 
-.btn-orange.learn::after {
+.btn.orange.learn::after {
   content: "Learn More";
 }
 
@@ -73,7 +79,6 @@ a {
 .white-color {
   color: white;
 }
-
 /* ----/COMMON & UTILITY */
 
 /* ----STYLE */
@@ -130,14 +135,10 @@ header .nav-top-right li:first-child {
   color: #01A4BD;
 }
 
-header .nav-top-right button.login {
+header .nav-top-right .btn.login {
   border: 1px solid var(--btn-color);
   color: var(--btn-color);
   background: transparent;
-}
-
-header .nav-top-right button.get {
-  padding: 10px;
 }
 
 /* ----nav bottom */
@@ -161,7 +162,6 @@ header .nav-top-right button.get {
 /* ----header content */
 .header-content-container {
   background: #FEF6EF url("../img/jumbotron.png") no-repeat bottom right;
-  /* background-size: cover; */
   position: relative;
 }
 
@@ -179,7 +179,6 @@ header .nav-top-right button.get {
   border-bottom: 3px solid #33475B;
   position: absolute;
   bottom: 0;
-  /* opacity: 0.2; */
 }
 
 .header-title-container {
@@ -290,13 +289,11 @@ section h2 {
 
 .crm-description-text ul {
   list-style: none;
-  /* height: var(--header-nav-height); */
 }
 
 .crm-description-text ul li {
   display: inline;
   padding-right: 15px;
-  /* line-height: var(--header-nav-height); */
 }
 
 .crm-item {
@@ -416,7 +413,7 @@ section h2 {
   position: relative;
 }
 
-.section3 .second-part h2, .section3 .second-part button {
+.section3 .second-part h2, .section3 .second-part .btn {
   margin-bottom: 30px;
 }
 
@@ -467,8 +464,8 @@ footer ul {
   padding-top: 40px;
 }
 
-.footer-nav-top button {
-  padding: 10px;
+.footer-nav-top .btn {
+  /* padding: 10px; */
   background: #DADEE0;
   color: #32495B;
 }
@@ -511,9 +508,4 @@ footer ul {
 footer .copyright {
   color: white;
 }
-
-
-
-
-
 /* ----/STYLE */
